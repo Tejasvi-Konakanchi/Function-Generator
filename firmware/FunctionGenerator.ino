@@ -5,20 +5,6 @@
  *           "Function generator - Arduino"
  * ============================================================================
  *
- *  What the hardware does (read from the KiCad schematic):
- *
- *   AD9833 DDS module (J2) --R4 1k/C28 220p--> MCP41010 digital pot (U10)
- *        --C19 10u AC coupling--> R5 10k --> OPA197 inverting amp (U9, gain
- *        -R7/R5 = -22) --R10 50R--> BNC (J7)
- *
- *   DC offset: D5 PWM -> R11/C7 -> R8/C3 (2-pole RC filter) -> R6 -> op-amp
- *   summing node. The op-amp + input is biased to Vcc/3 by R9/R12, so
- *       Vdc_out = Vcc * (K0 - K1 * duty)
- *       K1 = R7/(R11+R8+R6) = 1.98,  K0 = (R12/(R9+R12)) * (1 + K1) = 0.994
- *   i.e. duty 0 -> about +5 V, duty 1 -> about -5 V (see offsetDuty()).
- *
- *   Supplies: 9 V wall-wart -> L7805 -> +5 V (Nano, AD9833, pot, OLED);
- *             +9 V and ICL7660 -> -9 V feed the op-amp.
  *
  *  Pin map (from the schematic nets):
  *     D2  rotary encoder A (INT0)        D9  AD9833 FSYNC
