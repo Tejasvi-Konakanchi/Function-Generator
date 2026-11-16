@@ -14,10 +14,8 @@ The project explores analog circuit design, signal generation, amplification, po
 | Parameter | Specification |
 |---|---|
 | Waveform outputs | Sine, Square, Triangle |
-| Frequency range | TBD |
-| Amplitude range | TBD |
-| Output impedance | TBD |
-| Power supply | TBD |
+| Frequency range | 10kHz-100kHz |
+| Amplitude range | -5V to +5V |
 
 ## System Architecture
 
@@ -25,11 +23,9 @@ The project explores analog circuit design, signal generation, amplification, po
 
 ## Hardware Design
 
-- Circuit schematics
-- Component selection and bill of materials (BOM)
-- PCB layout and routing
-- Power supply and voltage regulation
-- Signal generation and output amplification
+- Circuit schematics (added)
+- Component selection and bill of materials (BOM) (*To be added.*)
+- PCB layout and routing (*To be added.*)
 
 ## Simulation & Analysis
 
@@ -49,9 +45,9 @@ The project explores analog circuit design, signal generation, amplification, po
 
 ## Tools & Technologies
 
-- **PCB Design:** TBD
+- **PCB Design:** KiCad
 - **Circuit Simulation:** TBD
-- **Programming:** TBD
+- **Programming:** Arduino IDE
 - **Hardware Testing:** Oscilloscope, TBD
 
 ## Repository Structure
@@ -63,7 +59,7 @@ function-generator/
 ├── pcb/              # PCB design and fabrication files
 ├── calculations/     # Engineering calculations
 ├── simulation/       # Circuit simulations and waveforms
-├── firmware/         # Source code (if applicable)
+├── firmware/         # Source code 
 ├── testing/          # Test procedures and measurements
 ├── images/           # Project and prototype photographs
 └── README.md
